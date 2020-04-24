@@ -35,7 +35,7 @@ def malurl_form(request):
             geturl = request.POST.get("url", "")
             if is_valid_url(geturl)==False:
                return render(request, 'urlerror.html')
-            cmd = "curl --request GET --url 'https://www.virustotal.com/vtapi/v2/url/report?apikey="+apikey+"&resource="+geturl+"'"
+            cmd = "curl -s --request GET --url 'https://www.virustotal.com/vtapi/v2/url/report?apikey="+apikey+"&resource="+geturl+"'"
             resp = os.popen(cmd)
             output = resp.read()
             try:

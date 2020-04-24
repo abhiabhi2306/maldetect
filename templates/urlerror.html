@@ -21,11 +21,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
 <a style="cursor: pointer" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'bright' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Switch to light or dark theme">🌓 Light | dark mode</a>
 </p></div></header>
 <div id="wrapper"><div id="container">
-<h1 class="post-title" ><a href="#">Malicious URL Detector</a></h1>
+<h1 class="post-title" ><a href="/">Malicious URL Detector</a></h1>
 <hr>
 <center>
 {% block content %}
-<center><h3 style="color:red;"> The url you provided is either incorrect or is not an alive domain, please try again with a valid alive domain</h3> </center>
+<center><h3 style="color:red;" title="please try again with a valid alive domain">The url you provided is either incorrect or is not an alive domain</h3></br> </center>
 {% endblock %}
 </center>
 </div></form></center></div></div>
