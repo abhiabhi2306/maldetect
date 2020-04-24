@@ -9,7 +9,7 @@ A web application built using django to detect malicious URL(s) which include ph
 
 $ cd maldetect
 $ echo "export API_KEY='[SECRET]'" > .env
-$ echo "export SECRET_KEY='[SECRET]'" > .env
+$ echo "export SECRET_KEY='[SECRET]'" >> .env
 $ source maldetect/bin/activate 
 (maldetect) $ source .env
 (maldetect) $ python manage.py runserver
