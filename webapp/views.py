@@ -14,7 +14,15 @@ def is_valid_url(url):
         validate(url)
         return True
     except ValidationError:
-        return False 
+        return False
+        
+        
+
+def handler500(request, *args, **argv):
+    response = render_to_response('urlerror.html', {},
+                                  context_instance=RequestContext(request))
+    response.status_code = 500
+    return response
 
 
 def malurl_form(request):

@@ -26,16 +26,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
 <!-- <h2>Chek URL</h2> -->
 <form name = "form" action = "/" %}" method = "POST" >
 {% csrf_token %} 
-<input type = "text" style = "" pattern="[Hh][Tt][Tt][Pp][Ss]?:\/\/(?:(?:[a-zA-Z\u00a1-\uffff0-9]+-?)*[a-zA-Z\u00a1-\uffff0-9]+)(?:\.(?:[a-zA-Z\u00a1-\uffff0-9]+-?)*[a-zA-Z\u00a1-\uffff0-9]+)*(?:\.(?:[a-zA-Z\u00a1-\uffff]{2,}))(?::\d{2,5})?(?:\/[^\s]*)?" required placeholder = "url" name = "url" id="checkURL" />
+<input type = "text" style = "" pattern="[Hh][Tt][Tt][Pp][Ss]?:\/\/(?:(?:[a-zA-Z\u00a1-\uffff0-9]+-?)*[a-zA-Z\u00a1-\uffff0-9]+)(?:\.(?:[a-zA-Z\u00a1-\uffff0-9]+-?)*[a-zA-Z\u00a1-\uffff0-9]+)*(?:\.(?:[a-zA-Z\u00a1-\uffff]{2,}))(?::\d{2,5})?(?:\/[^\s]*)?" required placeholder = "url" name = "url" />
 <script type="text/javascript">
 var input = document.getElementById('checkURL');
 input.oninvalid = function(event) {
-    event.target.setCustomValidity('Please type the url in http://example.com');
+    event.target.setCustomValidity('Please type the url in the format http://example.com or https://example.com');
+    input="https://test.com";
+    
 }
 </script>
 <button class="mdl-button mdl-js-button mdl-button--primary" type = "submit" value = "Check">
 <strong>Check</strong>
 </button>
+</br> </br>
+<i><b><h7> Please enter the url in the following format http://example.com or https://example.com </i></b></h>
 </center>
 </div></form></center></div></div>
 <!-- <footer>Bi0s-OFFSEC</footer> -->
