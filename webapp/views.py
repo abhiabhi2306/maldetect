@@ -8,7 +8,7 @@ import json
 from django.core.validators import URLValidator
 from django.core.exceptions import ValidationError
 
-apikey = "04f6969b2a33d59dab83d4c8283f00aeb0a7e17b1823c61012bfe87c927ba07b"
+apikey =  os.environ.get('API_KEY')
 
 def error_500(request,exception=None):
     return render(request, "urlerror.html", {})
