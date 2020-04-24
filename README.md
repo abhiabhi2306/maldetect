@@ -24,5 +24,5 @@ Make sure that you add your API_KEY from virustotal and change the secret key be
 
 # Credits
 
-@abhiabhi2306(https://github.com/abhiabhi2306)
-@v1dhun(https://github.com/v1dhun)
+@[abhiabhi2306](https://github.com/abhiabhi2306)
+@[v1dhun](https://github.com/v1dhun)
