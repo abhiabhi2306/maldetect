@@ -15,3 +15,6 @@ $ source maldetect/bin/activate
 (maldetect) $ python manage.py runserver
 
 ```
+
+
+Make sure that you add your API_KEY from virustotal and change the secret key before running it. 
